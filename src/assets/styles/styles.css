@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Phenomena';
+    src: url(/src/assets/fonts/Phenomena-Bold.woff2);
+    src: url(/src/assets/fonts/Phenomena-ExtraBold.woff2);
+    src: url(/src/assets/fonts/Phenomena-Light.woff2);
+    src: url(/src/assets/fonts/Phenomena-Regular.woff2);
+}
+
+::selection {
+    background-color: var(--cor-terceira);
+    color: var(--cor-primeira);
+}
+
+:root {
+    --cor-primeira: #FCFAEE;
+    --cor-segunda: #507687;
+    --cor-terceira: #B8001F;
+    --cor-quarta: #384B70;
+    --cor-quinta: #FCFAEE;
+    --cor-degrade: #FCFAEE;
+    
+    --fonte-primeira: 'Phenomena';
+}
+
+body.dark-mode {
+    --cor-primeira: #303841;
+    --cor-segunda: #FCFAEE;
+    --cor-terceira: #F6C90E;
+    --cor-quarta: #3A4750;
+    --cor-quinta: #3A4750;
+    --cor-degrade: #303841;
+}
+
+body {
+    background: var(--cor-primeira);
+    font-family: var(--fonte-primeira);
+}

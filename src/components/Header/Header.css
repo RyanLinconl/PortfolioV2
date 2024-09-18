@@ -1,0 +1,212 @@
+main {
+    padding-top: 80px; /* Deve ser igual à altura do header */
+}
+
+/* Menu Icon */
+.menu__icon {
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 40px; /* Tamanho do ícone */
+    z-index: 1001;
+}
+
+/* Menu Navigation (Escondido por padrão) */
+.menu__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--cor-segunda);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 9;
+    font-family: var(--fonte-primeira);
+}
+
+/* Open Menu */
+.menu__nav--open {
+    right: 0;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--cor-degrade);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGO */
+.logo__dupla {
+    display: none;
+}
+
+.logo__unica {
+    width: 150px; /* Ajuste o tamanho da logo */
+    height: auto;
+}
+
+/* NAVEGAÇÃO */
+.cabecalho__nav {
+    margin-top: 1.05rem;
+    font-weight: normal;
+    font-size: 24px;
+}
+.cabecalho__nav-link {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-primeira);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* LISTA DE ITENS */
+.cabecalho__item {
+    display: none;
+    flex-direction: column;
+    gap: 4rem;
+    height: auto;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Show Links When Menu is Open */
+.menu__nav--open .cabecalho__item {
+    display: flex;
+}
+
+/* DARK MODE */
+.botao_light_nav {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+
+.botao_light {
+    width: 45px;
+    height: 45px;
+    border: 3px solid var(--cor-segunda);
+    border-radius: 50%;
+    background-color: var(--cor-segunda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Icon Size */
+.darkmode-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s ease;
+}
+
+.botao_light:hover {
+    background-color: var(--cor-terceira);
+}
+
+/* RESPONSIVIDADE TABLET */
+@media screen and (min-width: 1024px) {
+
+    main {
+        padding-top: 0px;
+    }
+
+    /* TUDO */
+    .menu__icon {
+        display: none;
+    }
+
+    .menu__nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .cabecalho {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background: var(--cor-degrade);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 1rem 0rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* LOGO */
+    .cabecalho__logo {
+        display: none;
+        margin: 0;
+    }
+    
+
+    .logo__dupla {
+        display: block;
+        width: 100px;
+        margin-right: 8rem;
+        fill: currentColor;
+        color: var(--cor-terceira);
+    }
+
+    /* LISTA DE LINKS */
+    .cabecalho__item {
+        color: var(--cor-segunda);
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        gap: 10rem;
+    }
+
+    .cabecalho__nav-link {
+        color: var(--cor-segunda);
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+/* RESPONSIVIDADE DESKTOP */
+@media screen and (min-width: 1400px) {
+    .cabecalho {
+        scrollbar-width: none;
+        height: 10rem;
+    }
+    
+    .cabecalho__nav-link:hover {
+        color: var(--cor-terceira);
+    }
+
+    .cabecalho__logo {
+        height: 400px;
+        width: 200px;
+    }
+
+    .logo__dupla {
+        width: 150px;
+    }
+
+    /* LISTA DE ITENS */
+    .cabecalho__nav-link {
+        font-size: 55px;
+        font-weight: bold;
+    }
+}

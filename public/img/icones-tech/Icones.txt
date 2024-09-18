@@ -1,0 +1,17 @@
+JAVASCRIPT: https://www.svgrepo.com/show/349419/javascript.svg
+
+REACT: https://www.svgrepo.com/show/354259/react.svg
+
+TYPESCRIPT: https://www.svgrepo.com/show/374146/typescript-official.svg
+
+HTML: https://www.svgrepo.com/show/452228/html-5.svg
+
+CSS: https://www.svgrepo.com/show/452185/css-3.svg
+
+SCSS: https://www.svgrepo.com/show/374067/scss2.svg
+
+PYTHON: https://www.svgrepo.com/show/374016/python.svg
+
+SELENIUM: https://www.svgrepo.com/show/473780/selenium.svg
+
+PANDAS: https://www.svgrepo.com/show/473742/pandas.svg

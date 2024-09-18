@@ -1,0 +1,73 @@
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var( --fonte-primeira);
+    padding: 6rem 0;
+}
+
+/* TITULO */
+.sobre__titulo{
+    justify-content: center;
+    color: var(--cor-segunda);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 2rem 0;
+}   
+
+/* DESCRIÇÃO */
+.sobre__descricao {
+    color: var(--cor-segunda);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 80%;
+}
+
+.sobre__descricao-texto {
+    text-align: center;
+}
+
+/* FOTO  */
+.foto__ryan-inicio {
+    display: none;
+}
+
+.foto__ryan-sobre2 {
+    display: none;
+}
+
+
+/* RESPONSIVIDADE TABLET */
+@media screen and (min-width: 1024px) {
+    
+    .sobre {
+        margin: 10rem 0;
+        align-items: center;
+    }
+
+    .conteudo-sobre {
+        justify-content: center;
+    }
+
+    /* TITULO */
+    .sobre__titulo{
+       display: flex;
+       align-self: center; 
+       font-size: 84px; 
+       padding-bottom: 1rem;
+    }    
+
+    /* DESCRIÇÃO */
+    .sobre__descricao {
+        font-size: 42px;
+        width: 75%;
+        text-align: center;
+    }
+
+}
